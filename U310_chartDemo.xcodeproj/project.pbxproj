@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4DE113DE265F44ED00057238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113DD265F44ED00057238 /* AppDelegate.swift */; };
 		4DE113E0265F44ED00057238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113DF265F44ED00057238 /* SceneDelegate.swift */; };
-		4DE113E2265F44ED00057238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113E1265F44ED00057238 /* ViewController.swift */; };
+		4DE113E2265F44ED00057238 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113E1265F44ED00057238 /* ChartViewController.swift */; };
 		4DE113E5265F44ED00057238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE113E3265F44ED00057238 /* Main.storyboard */; };
 		4DE113E7265F44EF00057238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE113E6265F44EF00057238 /* Assets.xcassets */; };
 		4DE113EA265F44EF00057238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE113E8265F44EF00057238 /* LaunchScreen.storyboard */; };
+		4DE113F2265FA02800057238 /* CustomChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113F1265FA02800057238 /* CustomChartViewController.swift */; };
+		4DE113F42660791800057238 /* PostureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113F32660791800057238 /* PostureView.swift */; };
+		4DE113F626608CE000057238 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE113F526608CE000057238 /* Color.swift */; };
+		FE55525549DD3273561CF49E /* Pods_U310_chartDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE84AFC964437D386EF95B5 /* Pods_U310_chartDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EE84AFC964437D386EF95B5 /* Pods_U310_chartDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U310_chartDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F57465AB7FDDB1D7FC991D5 /* Pods-U310_chartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U310_chartDemo.debug.xcconfig"; path = "Target Support Files/Pods-U310_chartDemo/Pods-U310_chartDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4DE113DA265F44ED00057238 /* U310_chartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U310_chartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE113DD265F44ED00057238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE113DF265F44ED00057238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DE113E1265F44ED00057238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DE113E1265F44ED00057238 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		4DE113E4265F44ED00057238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DE113E6265F44EF00057238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE113E9265F44EF00057238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DE113EB265F44EF00057238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE113F1265FA02800057238 /* CustomChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChartViewController.swift; sourceTree = "<group>"; };
+		4DE113F32660791800057238 /* PostureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureView.swift; sourceTree = "<group>"; };
+		4DE113F526608CE000057238 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		98AFD0BA88AEF03363842993 /* Pods-U310_chartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U310_chartDemo.release.xcconfig"; path = "Target Support Files/Pods-U310_chartDemo/Pods-U310_chartDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE55525549DD3273561CF49E /* Pods_U310_chartDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0629500D66476E9ABEE0D5D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F57465AB7FDDB1D7FC991D5 /* Pods-U310_chartDemo.debug.xcconfig */,
+				98AFD0BA88AEF03363842993 /* Pods-U310_chartDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4DE113D1265F44ED00057238 = {
 			isa = PBXGroup;
 			children = (
 				4DE113DC265F44ED00057238 /* U310_chartDemo */,
 				4DE113DB265F44ED00057238 /* Products */,
+				0629500D66476E9ABEE0D5D0 /* Pods */,
+				844ECF7562F0BBB9546F1653 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +80,24 @@
 			children = (
 				4DE113DD265F44ED00057238 /* AppDelegate.swift */,
 				4DE113DF265F44ED00057238 /* SceneDelegate.swift */,
-				4DE113E1265F44ED00057238 /* ViewController.swift */,
+				4DE113F32660791800057238 /* PostureView.swift */,
+				4DE113E1265F44ED00057238 /* ChartViewController.swift */,
 				4DE113E3265F44ED00057238 /* Main.storyboard */,
+				4DE113F1265FA02800057238 /* CustomChartViewController.swift */,
+				4DE113F526608CE000057238 /* Color.swift */,
 				4DE113E6265F44EF00057238 /* Assets.xcassets */,
 				4DE113E8265F44EF00057238 /* LaunchScreen.storyboard */,
 				4DE113EB265F44EF00057238 /* Info.plist */,
 			);
 			path = U310_chartDemo;
+			sourceTree = "<group>";
+		};
+		844ECF7562F0BBB9546F1653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EE84AFC964437D386EF95B5 /* Pods_U310_chartDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE113EE265F44EF00057238 /* Build configuration list for PBXNativeTarget "U310_chartDemo" */;
 			buildPhases = (
+				779F4E5B077E84C85A07F3FC /* [CP] Check Pods Manifest.lock */,
 				4DE113D6265F44ED00057238 /* Sources */,
 				4DE113D7265F44ED00057238 /* Frameworks */,
 				4DE113D8265F44ED00057238 /* Resources */,
+				F83DB1C7C9E41B41B93C2648 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +167,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		779F4E5B077E84C85A07F3FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-U310_chartDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83DB1C7C9E41B41B93C2648 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-U310_chartDemo/Pods-U310_chartDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-U310_chartDemo/Pods-U310_chartDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-U310_chartDemo/Pods-U310_chartDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DE113D6265F44ED00057238 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DE113E2265F44ED00057238 /* ViewController.swift in Sources */,
+				4DE113F42660791800057238 /* PostureView.swift in Sources */,
+				4DE113E2265F44ED00057238 /* ChartViewController.swift in Sources */,
 				4DE113DE265F44ED00057238 /* AppDelegate.swift in Sources */,
+				4DE113F2265FA02800057238 /* CustomChartViewController.swift in Sources */,
 				4DE113E0265F44ED00057238 /* SceneDelegate.swift in Sources */,
+				4DE113F626608CE000057238 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +363,14 @@
 		};
 		4DE113EF265F44EF00057238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F57465AB7FDDB1D7FC991D5 /* Pods-U310_chartDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q39S762VC;
 				INFOPLIST_FILE = U310_chartDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +378,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charder.U310-chartDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4DE113F0265F44EF00057238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98AFD0BA88AEF03363842993 /* Pods-U310_chartDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q39S762VC;
 				INFOPLIST_FILE = U310_chartDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charder.U310-chartDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
