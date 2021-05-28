@@ -12,6 +12,7 @@ class PostureView : UIView {
     //體脂肪 3%~60%  標準 男 12 ~ 20 女 18 ~ 28
     
     var posturePointList = [PosturePoint]()
+    var dotLayers = [CAShapeLayer]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -68,6 +69,7 @@ class PostureView : UIView {
     
     func addDot(posturePointList : [PosturePoint] , gender : Int){
         self.gender = gender
+        removeAllDot()
         let width = self.frame.width / 3
         let height = self.frame.height / 3
         for (index , posturePoint) in posturePointList.enumerated() {
@@ -142,27 +144,17 @@ class PostureView : UIView {
                 dotLayer.fillColor = UIColor.grayColor
                     .withAlphaComponent(alpha * CGFloat(index + 1)).cgColor
             }
+            dotLayers.append(dotLayer)
             self.layer.addSublayer(dotLayer)
+            
         }
     }
-    
-    func addDot(){
-
-        
-        let dotpath2 = UIBezierPath(ovalIn: CGRect(x: 100, y: 150 , width: 10, height:10 ))
-        let dotpath = UIBezierPath(ovalIn: CGRect(x: 100, y: 100 , width: 10, height:10 ))
-        let dotLayer = CAShapeLayer()
-        let dotLayer2 = CAShapeLayer()
-        
-        dotLayer.path = dotpath.cgPath
-        dotLayer2.path = dotpath2.cgPath
-        dotLayer.fillColor = UIColor.red.withAlphaComponent(0.5).cgColor
-        dotLayer2.fillColor = UIColor.red.withAlphaComponent(1).cgColor
-        
-        self.layer.addSublayer(dotLayer)
-        self.layer.addSublayer(dotLayer2)
+    func removeAllDot(){
+        for layer in dotLayers {
+            layer.removeFromSuperlayer()
+        }
+        dotLayers.removeAll()
     }
-    
     
     func setDashedLine( cgStart :CGPoint , cgEnd :CGPoint , color :UIColor){ //畫曲線
         let linepath = UIBezierPath()

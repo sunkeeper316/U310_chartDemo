@@ -72,24 +72,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cav-Go-ccI" customClass="PostureView" customModule="U310_chartDemo" customModuleProvider="target">
-                                <rect key="frame" x="31" y="252.5" width="352" height="352"/>
+                                <rect key="frame" x="31" y="253" width="352" height="352"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Cav-Go-ccI" secondAttribute="height" multiplier="1:1" id="gWK-Ys-YkW"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6O-1r-WdD">
+                                <rect key="frame" x="10" y="54" width="394" height="30"/>
+                                <state key="normal" title="新增"/>
+                                <connections>
+                                    <action selector="clickAdd:" destination="RCr-cB-0Lf" eventType="touchUpInside" id="cj1-xo-tZf"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YQ9-az-Dys">
+                                <rect key="frame" x="10" y="94" width="394" height="32"/>
+                                <segments>
+                                    <segment title="女"/>
+                                    <segment title="男"/>
+                                </segments>
+                                <connections>
+                                    <action selector="clickSegmented:" destination="RCr-cB-0Lf" eventType="valueChanged" id="knd-Hy-gwD"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BMI" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yeK-L5-10G">
+                                <rect key="frame" x="10" y="145" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BodyFat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E8g-H9-0nJ">
+                                <rect key="frame" x="10" y="199" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1qE-sn-dDi"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Cav-Go-ccI" firstAttribute="centerY" secondItem="1qE-sn-dDi" secondAttribute="centerY" id="J5X-OL-DSN"/>
+                            <constraint firstItem="1qE-sn-dDi" firstAttribute="trailing" secondItem="P6O-1r-WdD" secondAttribute="trailing" constant="10" id="4Wl-5A-b43"/>
+                            <constraint firstItem="E8g-H9-0nJ" firstAttribute="width" secondItem="yeK-L5-10G" secondAttribute="width" id="8zF-Dz-eaf"/>
+                            <constraint firstItem="Cav-Go-ccI" firstAttribute="top" secondItem="E8g-H9-0nJ" secondAttribute="bottom" constant="20" id="E1u-qx-RDg"/>
+                            <constraint firstItem="E8g-H9-0nJ" firstAttribute="top" secondItem="yeK-L5-10G" secondAttribute="bottom" constant="20" id="OgP-zy-evj"/>
+                            <constraint firstItem="yeK-L5-10G" firstAttribute="top" secondItem="YQ9-az-Dys" secondAttribute="bottom" constant="20" id="Oiz-SF-OBc"/>
+                            <constraint firstItem="YQ9-az-Dys" firstAttribute="centerX" secondItem="P6O-1r-WdD" secondAttribute="centerX" id="OzD-zm-QGE"/>
                             <constraint firstItem="Cav-Go-ccI" firstAttribute="centerX" secondItem="1qE-sn-dDi" secondAttribute="centerX" id="UAF-jY-yvD"/>
                             <constraint firstItem="Cav-Go-ccI" firstAttribute="width" secondItem="1qE-sn-dDi" secondAttribute="width" multiplier="0.85" id="WZU-SV-0no"/>
+                            <constraint firstItem="P6O-1r-WdD" firstAttribute="top" secondItem="1qE-sn-dDi" secondAttribute="top" constant="10" id="X7X-GF-bOY"/>
+                            <constraint firstItem="yeK-L5-10G" firstAttribute="width" secondItem="YQ9-az-Dys" secondAttribute="width" id="bbW-Et-GEs"/>
+                            <constraint firstItem="P6O-1r-WdD" firstAttribute="leading" secondItem="1qE-sn-dDi" secondAttribute="leading" constant="10" id="c6L-Ih-rbA"/>
+                            <constraint firstItem="YQ9-az-Dys" firstAttribute="top" secondItem="P6O-1r-WdD" secondAttribute="bottom" constant="10" id="jW2-Rf-Oup"/>
+                            <constraint firstItem="E8g-H9-0nJ" firstAttribute="centerX" secondItem="yeK-L5-10G" secondAttribute="centerX" id="qbS-k1-jZj"/>
+                            <constraint firstItem="yeK-L5-10G" firstAttribute="centerX" secondItem="YQ9-az-Dys" secondAttribute="centerX" id="qeg-db-jpN"/>
+                            <constraint firstItem="YQ9-az-Dys" firstAttribute="width" secondItem="P6O-1r-WdD" secondAttribute="width" id="rEz-dy-Zic"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="XUB-aE-RGZ"/>
                     <connections>
                         <outlet property="chartView" destination="Cav-Go-ccI" id="sRW-HD-gta"/>
+                        <outlet property="tfBMI" destination="yeK-L5-10G" id="3iW-gh-wK7"/>
+                        <outlet property="tfBodyFat" destination="E8g-H9-0nJ" id="yrj-fr-roI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sA-rk-bWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
