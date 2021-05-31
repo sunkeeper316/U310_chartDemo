@@ -5,6 +5,7 @@ class CustomChartViewController: UIViewController {
     
     @IBOutlet weak var tfBMI: UITextField!
     @IBOutlet weak var tfBodyFat: UITextField!
+    @IBOutlet weak var tfResult: UILabel!
     
     @IBOutlet weak var chartView: PostureView!
     
@@ -41,6 +42,11 @@ class CustomChartViewController: UIViewController {
             posturePointList.append(posturePoint)
             
             chartView.addDot(posturePointList: posturePointList , gender: gender)
+            var show = ""
+            for (index , p) in posturePointList.enumerated() {
+                show += "\(index): (\(p.bmi),\(p.bodyfat)) "
+            }
+            tfResult.text! = show
         }
         
     }
@@ -50,5 +56,10 @@ class CustomChartViewController: UIViewController {
     }
     
     
+    @IBAction func clickClear(_ sender: UIButton) {
+        chartView.removeAllDot()
+        posturePointList.removeAll()
+        tfResult.text = ""
+    }
     
 }

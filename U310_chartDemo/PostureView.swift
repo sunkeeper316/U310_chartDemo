@@ -132,7 +132,7 @@ class PostureView : UIView {
             }
             
             
-            let dotpath = UIBezierPath(ovalIn: CGRect(x: x, y: y , width: 10, height:10 ))
+            let dotpath = UIBezierPath(ovalIn: CGRect(x: x, y: y - 10 , width: 10, height:10 ))
             let dotLayer = CAShapeLayer()
             dotLayer.path = dotpath.cgPath
             
